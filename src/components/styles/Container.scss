@@ -1,0 +1,9 @@
+@import "./base";
+
+.container {
+  background-color: $primaryWhite;
+  .onedata {
+    padding: 1ch;
+    border: 1px solid;
+  }
+}
