@@ -1,70 +1,10 @@
 import React from "react";
-
+import { randomTestData } from "../DemoData";
+import "../components/styles/Answer.scss";
 const Answer = () => {
-  const randomTestData = [
-    {
-      id: "1",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "2",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "3",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "4",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "5",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "6",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "7",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "8",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "9",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "10",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "11",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "12",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    {
-      id: "13",
-      data: "yyyyyyyyasddddddddajjjjjjjjjjjasdklaksdlaskd,asndkansd",
-    },
-    { id: "14", data: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdddddd" },
-    { id: "15", data: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdddddd" },
-    { id: "16", data: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdddddd" },
-    { id: "17", data: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdddddd" },
-    { id: "18", data: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdddddd" },
-    { id: "19", data: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdddddd" },
-    { id: "20", data: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdddddd" },
-    { id: "21", data: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasdddddd" },
-  ];
   return (
     <div>
+      <h2>Answer</h2>
       {randomTestData.map((data) => {
         return (
           <div
@@ -75,7 +15,10 @@ const Answer = () => {
             }}
             key={data.id}
           >
-            {data.data}
+            <div className="username">{data.username}</div>
+            <div className="date">{data.date}</div>
+            <div className="question">{data.question}</div>
+            <div className="answer">{data.answer}</div>
           </div>
         );
       })}
