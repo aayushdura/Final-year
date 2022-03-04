@@ -3,7 +3,7 @@ export const randomTestData = [
     id: "1",
     username: "Sakar Poudel",
     date: Date.now(),
-    question: "What did you learn too late in life?",
+    question: "What did you learn too damn early in life?",
     answer:
       "Money management. If you cannot manage your money, it doen’t matter how much you make, you will always broke at the end of the month.",
     upvoteCount: 0,
