@@ -1,3 +1,4 @@
+
 import React from "react";
 import { demoAnswer } from "../MockData/DemoAnswer";
 import "../components/styles/Answer.scss";
@@ -26,5 +27,6 @@ const Answer = () => {
     </main>
   );
 };
-
 export default Answer;
+
+
