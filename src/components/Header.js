@@ -5,11 +5,13 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import Avatar from "@mui/material/Avatar";
 import { IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
+import { randomArrayOfNames } from "../MockData/DemoArray";
+import { generateRandomName } from "../MockData/DemoMethods";
 const Header = () => {
   return (
     <nav className="header-navbar">
       <div>
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <Link to="/container" style={{ textDecoration: "none" }}>
           <h2>CSIT-FORUM</h2>
         </Link>
       </div>
@@ -24,8 +26,8 @@ const Header = () => {
         </IconButton>
         <Avatar
           style={{ color: "rgb(28, 36, 105)" }}
-          alt="Aayush"
-          src="/static/images/avatar/1.jpg"
+          alt={generateRandomName(randomArrayOfNames)}
+          src="image-source"
         />
       </div>
     </nav>
