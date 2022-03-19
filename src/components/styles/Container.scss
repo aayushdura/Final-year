@@ -1,17 +1,23 @@
-
 @import "./base";
+.header {
+  margin: 1%;
+  box-shadow: $boxShadow;
+}
 .primary-section {
   display: flex;
   flex-direction: row;
-  gap: 2px;
+  gap: 0.5%;
+  margin: 0.5%;
+  // box-shadow: $boxShadow2;
   .leftnav-body {
     background-color: $primaryWhite;
     width: 20%;
     border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   .routing-section {
     padding: 0.5em;
-    background-color: $primaryWhite;
+    background-color: $primaryColor;
     border-radius: 1em;
     color: rgb(34, 33, 33);
     display: flex;
@@ -25,5 +31,6 @@
     border-radius: 1em;
     margin-left: auto;
     width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { demoAnswer } from "../MockData/DemoAnswer";
 import "../components/styles/Answer.scss";
@@ -8,7 +7,7 @@ import LeftNavBar from "../components/LeftNavBar";
 import RightNavBar from "../components/RightNavBar";
 const Answer = () => {
   return (
-    <main>
+    <>
       <Header />
       <div className="primary-section">
         <div className="leftnav-body">
@@ -24,9 +23,7 @@ const Answer = () => {
           <RightNavBar />
         </div>
       </div>
-    </main>
+    </>
   );
 };
 export default Answer;
-
-

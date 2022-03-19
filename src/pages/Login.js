@@ -6,17 +6,39 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router";
 import { randomArrayOfNames } from "../MockData/DemoArray";
 import { generateRandomName } from "../MockData/DemoMethods";
+import axios from "axios";
 const Login = () => {
   const navigate = useNavigate();
   const handleSubmit = (e) => {
-    navigate("/container");
     e.preventDefault();
+    const params = new URLSearchParams();
+    params.append("fullName", formValues.userName);
+    params.append("email", formValues.email);
+    params.append("password", formValues.password);
+    console.log(formValues);
+    axios
+      .post("http://localhost:8080/api/auth/login", params, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      })
+      .then((result) => {
+        console.log(result);
+        alert(result.data?.msg);
+        if (result.status === 201) {
+          alert(result.data?.msg);
+          navigate("/container");
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
+
   const [formValues, setFormValues] = useState({
     email: "",
     password: "",
   });
-
   return (
     <main>
       <Form className="form-container" onSubmit={handleSubmit}>
@@ -67,7 +89,7 @@ const Login = () => {
         </Button>
         <p className="text-muted" id="text-muted2">
           Not a member{" "}
-          <Link to="/register" style={{ textDecoration: "none" }}>
+          <Link to="/" style={{ textDecoration: "none" }}>
             Register
           </Link>
         </p>

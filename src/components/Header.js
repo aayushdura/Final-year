@@ -5,6 +5,7 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import Avatar from "@mui/material/Avatar";
 import { IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
+import { Form } from "react-bootstrap";
 import { randomArrayOfNames } from "../MockData/DemoArray";
 import { generateRandomName } from "../MockData/DemoMethods";
 const Header = () => {
@@ -16,7 +17,15 @@ const Header = () => {
         </Link>
       </div>
       <div className="searchbar-navbar">
-        <input type="search" placeholder="Search..."></input>
+        <Form.Control
+          type="search"
+          placeholder="Search..."
+          className="searchbar"
+          // value={formValues?.email}
+          // onChange={(e) => {
+          //   setFormValues({ ...formValues, email: e.target.value });
+          // }}
+        />
       </div>
       <div className="right-div-navbar">
         <IconButton>

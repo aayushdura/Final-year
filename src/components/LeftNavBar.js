@@ -12,6 +12,7 @@ const LeftNavBar = () => {
   // };
   const styleLink = {
     textDecoration: "none",
+    color: "black",
   };
   return (
     <aside className="leftnavbar-container">

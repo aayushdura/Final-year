@@ -13,10 +13,12 @@ const RightNavBar = () => {
         style={{ backgroundColor: "rgb(62, 224, 124) " }}
         onClick={() => setModalShow(true)}
       >
-        +Start a New Topic
+        ?ASK A NEW QUESTION?
       </Button>
       <MyVerticallyCenteredModal
         show={modalShow}
+        title="Ask Anything"
+        Question={true}
         onHide={() => setModalShow(false)}
       />
     </div>

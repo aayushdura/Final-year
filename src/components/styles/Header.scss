@@ -1,12 +1,13 @@
 @import "./base";
 nav {
   display: flex;
-  height: 40px;
-  padding: 0.5em;
-  border: 1px solid;
+  height: 55px;
+  padding: 0.8em;
+  margin: 0.5%;
   background-color: $primaryWhite;
   align-items: center;
   border-radius: 1em;
+  box-shadow: $boxShadow;
   .header-navbar {
     margin-left: auto;
   }
@@ -14,7 +15,7 @@ nav {
     margin-left: auto;
     margin-right: 7%;
   }
-  input {
+  .searchbar {
     width: 25em;
     height: 3em;
     outline: none;

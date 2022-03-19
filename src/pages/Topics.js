@@ -1,12 +1,11 @@
-
 import React from "react";
-import Card from "../components/Card";
+// import Card from "../components/Card";
 import Header from "../components/Header";
 import LeftNavBar from "../components/LeftNavBar";
 import RightNavBar from "../components/RightNavBar";
 import "../components/styles/Topics.scss";
-
-import { randomTestData } from "../MockData/DemoData";
+import { randomArrayOfTopics } from "../MockData/DemoArray";
+// import { randomTestData } from "../MockData/DemoData";
 
 const Topics = () => {
   return (
@@ -18,9 +17,15 @@ const Topics = () => {
         </div>
         <section className="routing-section">
           <h2>Topics</h2>
-          {randomTestData.map((data) => {
-            return <Card key={data.id} data={data} />;
-          })}
+          <aside className="routing-container">
+            {randomArrayOfTopics.map((data) => {
+              return (
+                <span key={Math.random()} className="routing-component">
+                  {data}
+                </span>
+              );
+            })}
+          </aside>
         </section>
         <div className="rightnav-body">
           <RightNavBar />
@@ -31,4 +36,3 @@ const Topics = () => {
 };
 
 export default Topics;
-

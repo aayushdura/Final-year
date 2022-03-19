@@ -2,7 +2,7 @@ export const randomTestData = [
   {
     id: "1",
     username: "Sakar Poudel",
-    date: Date.now(),
+    date: "12h",
     question: "What did you learn too late in life?",
     answer:
       "Money management. If you cannot manage your money, it doen’t matter how much you make, you will always broke at the end of the month.",
@@ -11,7 +11,7 @@ export const randomTestData = [
   {
     id: "2",
     username: "Uttam Bhandari",
-    date: Date.now(),
+    date: "3d",
     question:
       "What routines did you start early in life that have now paid off big",
     answer:
@@ -21,7 +21,7 @@ export const randomTestData = [
   {
     id: "3",
     username: "Sami Khadka",
-    date: Date.now(),
+    date: "7h",
     question: "What is the easiest and fastest programming language to learn?",
     answer:
       "Python, but it has several disadvantages.If you’re a hobbyist and just want to learn programming, Python will probably be fine If you’re a CompSci or Software Engineering student, you’ll want something else ",
@@ -30,7 +30,7 @@ export const randomTestData = [
   {
     id: "4",
     username: "Sarah Chitrakar",
-    date: Date.now(),
+    date: "6h",
     question:
       "How did you develop as a PhD student from your first to your final year?",
     answer:
@@ -40,7 +40,7 @@ export const randomTestData = [
   {
     id: "5",
     username: "Garden C",
-    date: Date.now(),
+    date: "5min",
     question: "What do you know that most people don’t?",
     answer:
       "The poor man was sentenced to death by starvation for thieving a loaf of bread during the reign of Louis XIV in France. The woman was his only daughter and the only visitor to his cell. She was allowed to visit him daily but was searched thoroughly such that no food was taken in.",
@@ -49,7 +49,7 @@ export const randomTestData = [
   {
     id: "6",
     username: "Alex Fermen",
-    date: Date.now(),
+    date: "4h",
     question: "What was the best relationship advice you ever got?",
     answer:
       "1. You’re over them once you forget to check their social media profiles. 2. When choosing a partner, go for their values and beliefs, not the glitter.",
