@@ -1,17 +1,6 @@
-.onedata {
-  padding: 1ch;
-  border: 1px solid;
-  border-radius: 5px;
+
+@import "./base";
+.card-container {
+  padding: 1em;
   margin-bottom: 10px;
-  .username {
-    font-style: italic;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  .question {
-    font-weight: bold;
-  }
-  .answer {
-    font-family: "Times New Roman", Times, serif;
-  }
 }

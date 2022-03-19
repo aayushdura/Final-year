@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import ExploreIcon from "@mui/icons-material/Explore";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
@@ -6,16 +6,16 @@ import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import "./styles/LeftNavBar.scss";
 import { Link } from "react-router-dom";
 const LeftNavBar = () => {
-  const [selected, setSelected] = useState();
-  const handleTabSelect = (e, val) => {
-    setSelected(val);
-  };
+  // // const [selected, setSelected] = useState();
+  // const handleTabSelect = (e, val) => {
+  //   setSelected(val);
+  // };
   const styleLink = {
     textDecoration: "none",
   };
   return (
     <aside className="leftnavbar-container">
-      <Link to="/" style={styleLink}>
+      <Link to="/container" style={styleLink}>
         <span className="leftbar-component">
           <HomeIcon />
           Home
@@ -29,7 +29,7 @@ const LeftNavBar = () => {
       </Link>
       <Link to="/answer" style={styleLink}>
         <span className="leftbar-component">
-          <QuestionAnswerIcon />
+          <QuestionAnswerIcon fontSiz />
           My Answers
         </span>
       </Link>
